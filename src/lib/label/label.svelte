@@ -10,12 +10,12 @@
 
 <LabelPrimitive.Root bind:ref class="cms-label {className}" {...restProps} />
 
-<style lang="postcss" global>
-	.cms-label {
+<style lang="postcss">
+	:global(.cms-label) {
 		display: inline-block;
 		font-size: var(--cms-text-sm);
 	}
-	.cms-label ~ :disabled {
+	:global(.cms-label ~ :disabled) {
 		opacity: 0.7;
 		cursor: not-allowed;
 	}
